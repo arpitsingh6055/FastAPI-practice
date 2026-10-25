@@ -1,7 +1,8 @@
-def main():
-    print("Hello from learn-python!")
+from fastapi import FastAPI
 
+# This is the variable name FastAPI looks for by default
+app = FastAPI()
 
-if __name__ == "__main__":
-    main()
-    
+@app.get("/")
+def read_root():
+    return {"status": "success", "message": "FastAPI is working!"}

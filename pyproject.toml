@@ -1,17 +1,10 @@
 [project]
-name = "fastapi"
+name = "fastapi-uv-sandbox"
 version = "0.1.0"
-description = "Add your description here"
+description = "FastAPI practice project"
 readme = "README.md"
-authors = [
-    { name = "Arpit Singh", email = "pgp26arpitsingh@imt.ac.in" }
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi[standard]>=0.115.0",
 ]
-requires-python = ">=3.14"
-dependencies = []
 
-[project.scripts]
-fastapi = "fastapi:main"
-
-[build-system]
-requires = ["uv_build>=0.13.0,<0.14.0"]
-build-backend = "uv_build"
